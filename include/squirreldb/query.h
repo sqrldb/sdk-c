@@ -141,11 +141,18 @@ sqrl_query_t* sqrl_skip(sqrl_query_t* query, size_t n);
 sqrl_query_t* sqrl_changes(sqrl_query_t* query);
 
 /**
- * Compile query to SquirrelDB JS string
+ * Compile query to SquirrelDB JS string (legacy)
  * @param query Query builder
  * @return Compiled query string (must be freed with free())
  */
 char* sqrl_query_compile(sqrl_query_t* query);
+
+/**
+ * Compile query to structured JSON string (preferred, no JS evaluation on server)
+ * @param query Query builder
+ * @return Compiled JSON string (must be freed with free())
+ */
+char* sqrl_query_compile_structured(sqrl_query_t* query);
 
 #ifdef __cplusplus
 }
