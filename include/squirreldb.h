@@ -16,10 +16,10 @@ extern "C" {
 #endif
 
 /* Version */
-#define SQRL_VERSION_MAJOR 
-#define SQRL_VERSION_MINOR 
-#define SQRL_VERSION_PATCH 
-#define SQRL_VERSION_STRING "0.1.0"
+#define SQRL_VERSION_MAJOR 0
+#define SQRL_VERSION_MINOR 3
+#define SQRL_VERSION_PATCH 0
+#define SQRL_VERSION_STRING "0.3.0"
 
 /* Protocol constants */
 #define SQRL_PROTOCOL_VERSION 0x01
